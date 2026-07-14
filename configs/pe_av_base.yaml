@@ -1,0 +1,44 @@
+embed_dim: 256
+frame:
+  image_size: 64
+  patch_size: 16
+  in_channels: 3
+  width: 256
+  depth: 4
+  heads: 4
+  mlp_ratio: 4.0
+  dropout: 0.0
+video:
+  width: 256
+  depth: 2
+  heads: 4
+  mlp_ratio: 4.0
+  max_frames: 16
+  dropout: 0.0
+audio:
+  n_mels: 64
+  max_frames: 200
+  patch_time: 16
+  patch_freq: 16
+  width: 256
+  depth: 4
+  heads: 4
+  mlp_ratio: 4.0
+  dropout: 0.0
+text:
+  vocab_size: 32000
+  max_length: 32
+  width: 256
+  depth: 4
+  heads: 4
+  mlp_ratio: 4.0
+  dropout: 0.0
+fusion:
+  width: 256
+  depth: 2
+  heads: 4
+  mlp_ratio: 4.0
+  dropout: 0.0
+  use_correspondence_gate: true
+logit_scale_init: 2.6593
+logit_scale_max: 4.6052
